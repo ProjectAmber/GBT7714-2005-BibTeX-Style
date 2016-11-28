@@ -1056,7 +1056,7 @@ FUNCTION {output.address} {                       % void Entry::output_address(i
     cap.period write$                             %     write(cap_period);
     address format.address write$                 %     write(format_address(this.address));
   } {                                             %   } else {
-    required {                                    %     if (required == 1) {
+    false {                                       %     if (false == 1) {
       "Require address: " cite$ * warning$        %       warning("Require address: " + this.cite);
       cap.period write$                           %       write(cap_period);
       cap.no.address format.address write$        %       write(format_address(cap_no_address()));
@@ -1072,7 +1072,7 @@ FUNCTION {output.publisher} {                     % void Entry::output_publisher
     cap.colon write$                              %     write(cap_colon);
     publisher format.publisher write$             %     write(format_publisher(this.publisher));
   } {                                             %   } else {
-    required {                                    %     if (required == 1) {
+    false {                                       %     if (false == 1) {
       "Require publisher: " cite$ * warning$      %       warning("Require publisher: " + this.cite);
       cap.colon write$                            %       write(cap_colon);
       cap.no.publisher format.publisher write$    %       write(format_publisher(cap_no_publisher()));
@@ -1088,7 +1088,7 @@ FUNCTION {output.publisher.no.address} {          % void Entry::output_publisher
     cap.period write$                             %     write(cap_period);
     publisher format.publisher write$             %     write(format_publisher(this.publisher));
   } {                                             %   } else {
-    required {                                    %     if (required == 1) {
+    false {                                       %     if (false == 1) {
       "Require publisher: " cite$ * warning$      %       warning("Require publisher: " + this.cite);
       cap.period write$                           %       write(cap_period);
       cap.no.publisher format.publisher write$    %       write(format_publisher(cap_no_publisher()));
