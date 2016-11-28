@@ -65,7 +65,7 @@ ENTRY                                             % class Entry {
   patentid                                        %   String patentid;
   media                                           %   String media;
 } {                                               %   //  declare integer variables
-  required                                        %   int required;  // withther the bibfield is required
+  required                                        %   int required;  // whether the bibfield is required
 } {                                               %   //  declare String variables
   label                                           %   String label;           //  label for the entry
   mark                                            %   String mark;            //  mark for the entry
